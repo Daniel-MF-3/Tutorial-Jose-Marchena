@@ -9,7 +9,7 @@ logic [5 : 0]count_o;
 module_counter # (10) COUNTER (
     .clk (clk),
     .rst (rst),
-    ,count_o(count_o)
+    .count_o(count_o)
 
 );
 
@@ -25,11 +25,11 @@ initial begin
     rst = 1;
     
     # 300000;
-    $finish
+    $finish;
 end
 
 always begin
-    clk=~clk
+    clk = ~clk;
     #10;
 end
 
