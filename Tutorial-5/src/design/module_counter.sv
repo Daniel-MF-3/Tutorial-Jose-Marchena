@@ -32,8 +32,6 @@ module module_counter # (
          led_countr_r  <= led_countr_r;
     end
          
-
-
  end
 
  assign count_o= ~led_countr_r;
